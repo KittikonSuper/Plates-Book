@@ -9,13 +9,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kru.pag.bookplates.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></LinearLayout>
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:text="@string/s1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s2"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="clickcarMain" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s3"
+            android:id="@+id/button3"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
 </RelativeLayout>
